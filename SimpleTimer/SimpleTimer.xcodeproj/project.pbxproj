@@ -11,7 +11,10 @@
 		520842B71A11516C003F19CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520842AB1A11516C003F19CE /* Images.xcassets */; };
 		520842B81A11516C003F19CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842AF1A11516C003F19CE /* AppDelegate.swift */; };
 		520842B91A11516C003F19CE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520842B21A11516C003F19CE /* Info.plist */; };
-		520842BE1A115503003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842BC1A115503003F19CE /* MainMenu.xib */; };
+		520842C51A1155B1003F19CE /* MCTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* MCTimer.swift */; };
+		520842C61A1155B1003F19CE /* MCTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* MCTimer.swift */; };
+		520842CA1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
+		520842CB1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,8 @@
 		520842AB1A11516C003F19CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		520842AF1A11516C003F19CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520842B21A11516C003F19CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		520842BD1A115503003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		520842C41A1155B1003F19CE /* MCTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTimer.swift; sourceTree = "<group>"; };
+		520842C91A1157D3003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +106,9 @@
 				520842AA1A11516C003F19CE /* Assets */,
 				520842AC1A11516C003F19CE /* Classes */,
 				520842AD1A11516C003F19CE /* Core */,
+				520842B31A11516C003F19CE /* Views */,
 				520842B01A11516C003F19CE /* Libraries */,
 				520842B11A11516C003F19CE /* SupportingFiles */,
-				520842B31A11516C003F19CE /* Views */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				520842AE1A11516C003F19CE /* ApplicationDelegate */,
+				520842C31A1155B1003F19CE /* Timer */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -158,23 +163,23 @@
 		520842B31A11516C003F19CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				520842B41A11516C003F19CE /* xibs */,
+				520842C71A1157D3003F19CE /* MainWindow */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		520842B41A11516C003F19CE /* xibs */ = {
+		520842C31A1155B1003F19CE /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				520842BB1A115503003F19CE /* MainWindow */,
+				520842C41A1155B1003F19CE /* MCTimer.swift */,
 			);
-			path = xibs;
+			path = Timer;
 			sourceTree = "<group>";
 		};
-		520842BB1A115503003F19CE /* MainWindow */ = {
+		520842C71A1157D3003F19CE /* MainWindow */ = {
 			isa = PBXGroup;
 			children = (
-				520842BC1A115503003F19CE /* MainMenu.xib */,
+				520842C81A1157D3003F19CE /* MainMenu.xib */,
 			);
 			path = MainWindow;
 			sourceTree = "<group>";
@@ -262,7 +267,7 @@
 			files = (
 				520842B91A11516C003F19CE /* Info.plist in Resources */,
 				520842B71A11516C003F19CE /* Images.xcassets in Resources */,
-				520842BE1A115503003F19CE /* MainMenu.xib in Resources */,
+				520842CA1A1157D3003F19CE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520842CB1A1157D3003F19CE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				520842B81A11516C003F19CE /* AppDelegate.swift in Sources */,
+				520842C51A1155B1003F19CE /* MCTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */,
+				520842C61A1155B1003F19CE /* MCTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,10 +311,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		520842BC1A115503003F19CE /* MainMenu.xib */ = {
+		520842C81A1157D3003F19CE /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				520842BD1A115503003F19CE /* Base */,
+				520842C91A1157D3003F19CE /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
