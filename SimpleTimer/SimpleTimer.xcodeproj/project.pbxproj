@@ -11,7 +11,7 @@
 		520842B71A11516C003F19CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520842AB1A11516C003F19CE /* Images.xcassets */; };
 		520842B81A11516C003F19CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842AF1A11516C003F19CE /* AppDelegate.swift */; };
 		520842B91A11516C003F19CE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520842B21A11516C003F19CE /* Info.plist */; };
-		520842BA1A11516C003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842B51A11516C003F19CE /* MainMenu.xib */; };
+		520842BE1A115503003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842BC1A115503003F19CE /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 		520842AB1A11516C003F19CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		520842AF1A11516C003F19CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520842B21A11516C003F19CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		520842B61A11516C003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		520842BD1A115503003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +166,17 @@
 		520842B41A11516C003F19CE /* xibs */ = {
 			isa = PBXGroup;
 			children = (
-				520842B51A11516C003F19CE /* MainMenu.xib */,
+				520842BB1A115503003F19CE /* MainWindow */,
 			);
 			path = xibs;
+			sourceTree = "<group>";
+		};
+		520842BB1A115503003F19CE /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				520842BC1A115503003F19CE /* MainMenu.xib */,
+			);
+			path = MainWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +262,7 @@
 			files = (
 				520842B91A11516C003F19CE /* Info.plist in Resources */,
 				520842B71A11516C003F19CE /* Images.xcassets in Resources */,
-				520842BA1A11516C003F19CE /* MainMenu.xib in Resources */,
+				520842BE1A115503003F19CE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +303,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		520842B51A11516C003F19CE /* MainMenu.xib */ = {
+		520842BC1A115503003F19CE /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				520842B61A11516C003F19CE /* Base */,
+				520842BD1A115503003F19CE /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
