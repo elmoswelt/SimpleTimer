@@ -15,6 +15,10 @@
 		520842C61A1155B1003F19CE /* MCTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* MCTimer.swift */; };
 		520842CA1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
 		520842CB1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
+		520842CE1A11640A003F19CE /* MCTimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* MCTimerPopover.swift */; };
+		520842CF1A11640A003F19CE /* MCTimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* MCTimerPopover.swift */; };
+		520842D31A1164C7003F19CE /* MCStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* MCStatusBar.swift */; };
+		520842D41A1164C7003F19CE /* MCStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* MCStatusBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,8 @@
 		520842B21A11516C003F19CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520842C41A1155B1003F19CE /* MCTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTimer.swift; sourceTree = "<group>"; };
 		520842C91A1157D3003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		520842CD1A11640A003F19CE /* MCTimerPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTimerPopover.swift; sourceTree = "<group>"; };
+		520842D21A1164C7003F19CE /* MCStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCStatusBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				520842AA1A11516C003F19CE /* Assets */,
-				520842AC1A11516C003F19CE /* Classes */,
+				520842D01A116498003F19CE /* Classes */,
 				520842AD1A11516C003F19CE /* Core */,
-				520842B31A11516C003F19CE /* Views */,
 				520842B01A11516C003F19CE /* Libraries */,
 				520842B11A11516C003F19CE /* SupportingFiles */,
+				520842B31A11516C003F19CE /* Views */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -119,13 +125,6 @@
 				520842AB1A11516C003F19CE /* Images.xcassets */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		520842AC1A11516C003F19CE /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		520842AD1A11516C003F19CE /* Core */ = {
@@ -163,6 +162,7 @@
 		520842B31A11516C003F19CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				520842CC1A1163F9003F19CE /* MainPopover */,
 				520842C71A1157D3003F19CE /* MainWindow */,
 			);
 			path = Views;
@@ -182,6 +182,30 @@
 				520842C81A1157D3003F19CE /* MainMenu.xib */,
 			);
 			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		520842CC1A1163F9003F19CE /* MainPopover */ = {
+			isa = PBXGroup;
+			children = (
+				520842CD1A11640A003F19CE /* MCTimerPopover.swift */,
+			);
+			path = MainPopover;
+			sourceTree = "<group>";
+		};
+		520842D01A116498003F19CE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				520842D11A1164B9003F19CE /* StatusBar */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		520842D11A1164B9003F19CE /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				520842D21A1164C7003F19CE /* MCStatusBar.swift */,
+			);
+			path = StatusBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520842CE1A11640A003F19CE /* MCTimerPopover.swift in Sources */,
+				520842D31A1164C7003F19CE /* MCStatusBar.swift in Sources */,
 				520842B81A11516C003F19CE /* AppDelegate.swift in Sources */,
 				520842C51A1155B1003F19CE /* MCTimer.swift in Sources */,
 			);
@@ -295,6 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520842CF1A11640A003F19CE /* MCTimerPopover.swift in Sources */,
+				520842D41A1164C7003F19CE /* MCStatusBar.swift in Sources */,
 				520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */,
 				520842C61A1155B1003F19CE /* MCTimer.swift in Sources */,
 			);
