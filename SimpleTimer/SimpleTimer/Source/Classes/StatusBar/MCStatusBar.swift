@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import Cocoa
+
+
+class MCStatusBar {
+    
+    var statusBar = NSStatusBar.systemStatusBar()
+    var statusBarItem : NSStatusItem = NSStatusItem()
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Setup
+    // ------------------------------------------------------------------------------------------
+    func setupStatusBar() {
+        
+        statusBarItem = statusBar.statusItemWithLength(-1)
+        statusBarItem.title = "04:53" // Just a test
+    }
+}
