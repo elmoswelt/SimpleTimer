@@ -5,8 +5,6 @@ Simple Timer for Mac
 
 ![ScreenShot](/Templates/SimpleTimer.png)
 
-![ScreenShot](/Templates/Artboard_1.png)
-
 - Application
 
 	- MCStatusBar 
@@ -28,3 +26,5 @@ Simple Timer for Mac
 				- Stop
 				- Reset - Reset is not moddled in the design
 		- Alarm Sound/Blink
+		
+![ScreenShot](/Templates/Artboard_1.png)
