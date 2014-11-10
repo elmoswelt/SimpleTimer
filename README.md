@@ -20,6 +20,7 @@ Simple Timer for Mac
 		
 	- MCPopover (Themable)
 		- Timer Dispaly (05:00)
+		- Timer Wheel
 		- Controls
 			- Control Elements
 				- Start
