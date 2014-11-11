@@ -14,13 +14,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     
     var statusBar = MCStatusBar()
-
+    let timer : MCTimer = MCTimer()
+    
     // ------------------------------------------------------------------------------------------
     //MARK: - AppDelegate Callbacksp
     // ------------------------------------------------------------------------------------------
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
         statusBar.setupStatusBar()
+        timer.start()
     }
     
 
