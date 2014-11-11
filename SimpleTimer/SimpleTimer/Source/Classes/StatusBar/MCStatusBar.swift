@@ -20,7 +20,10 @@ class MCStatusBar {
     // ------------------------------------------------------------------------------------------
     func setupStatusBar() {
         
-        statusBarItem = statusBar.statusItemWithLength(-1)
-        statusBarItem.title = "04:53" // Just a test
+        // TODO: Fix the static length
+        statusBarItem = statusBar.statusItemWithLength(80.0)
+        // TODO: Fix the value here, should be timer based
+        statusBarItem.title = "04:53" 
+        statusBarItem.image = NSImage(named:"MCClockIcon")
     }
 }
