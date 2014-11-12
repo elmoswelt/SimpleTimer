@@ -12,8 +12,8 @@ import Cocoa
 
 class MCStatusBar {
     
-    var statusBar = NSStatusBar.systemStatusBar()
-    var statusBarItem : NSStatusItem = NSStatusItem()
+    var statusBar:NSStatusBar = NSStatusBar.systemStatusBar()
+    var statusBarItem:NSStatusItem = NSStatusItem()
     
     // ------------------------------------------------------------------------------------------
     //MARK: - Setup
