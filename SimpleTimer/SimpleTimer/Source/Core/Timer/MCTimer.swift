@@ -18,9 +18,9 @@ class MCTimer : NSObject {
     var startTime:NSTimeInterval = NSTimeInterval()
     var timer:NSTimer = NSTimer()
     
+    var countDownValue:NSTimeInterval?
     
     // ------------------------------------------------------------------------------------------
-    
     
     
     // ------------------------------------------------------------------------------------------
@@ -41,17 +41,30 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func start() {
         
-        setupTimer()
+        if self.countDownValue != nil {
+        
+            setupTimer()
+        }
+        else {
+            println("[!] Error, no countdown set.")
+        }
+        
     }
+    
+    
+    func setCountDownValue(countDownValue: NSTimeInterval) {
+    
+        if countDownValue < 1.0 { return }
+        
+        self.countDownValue = countDownValue
+    }
+    
 
     
     // ------------------------------------------------------------------------------------------
     //MARK: - Timer update
     // ------------------------------------------------------------------------------------------
     func updateTimer() {
-        
-        // Countdown interval // TODO: Make this a variable.
-        let countDownValue:NSTimeInterval = 300.0
         
         // The current actual time
         let currentTime:NSTimeInterval = NSDate.timeIntervalSinceReferenceDate()
@@ -60,7 +73,7 @@ class MCTimer : NSObject {
         let elapsedTime:NSTimeInterval = currentTime - startTime
 
         // The countdown timer calling backwards from the start countdown value
-        let countDownTimer:NSTimeInterval = countDownValue - elapsedTime
+        let countDownTimer:NSTimeInterval = countDownValue! - elapsedTime
         
         // Calculate the minutes
         let minutes:Int = Int(countDownTimer / 60.0)

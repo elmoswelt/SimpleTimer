@@ -22,6 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
         statusBar.setupStatusBar()
+        timer.setCountDownValue(20.0)
         timer.start()
     }
     
