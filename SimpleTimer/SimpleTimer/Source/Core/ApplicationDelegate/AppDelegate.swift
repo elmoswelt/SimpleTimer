@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
         statusBar.setupStatusBar()
-        timer.setCountDownValue(20.0)
+        timer.setCountDownValue(5.0)
         timer.start()
     }
     
@@ -30,6 +30,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
 }
 
