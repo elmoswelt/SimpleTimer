@@ -13,8 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     
-    var statusBar = MCStatusBar()
-    let timer : MCTimer = MCTimer()
+    var statusBar:MCStatusBar = MCStatusBar()
+    let timer:MCTimer = MCTimer.shared
     
     // ------------------------------------------------------------------------------------------
     //MARK: - AppDelegate Callbacksp
