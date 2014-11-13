@@ -50,10 +50,12 @@ class StatusBar:NSObject {
     
     func setupObserver() {
         
-        NSNotificationCenter.defaultCenter().addObserver(self,
-                                                         selector: Selector("updateCountdownDidUpdate:"),
-                                                         name: NotificationName.NotificationNameUpdateCountdown.rawValue,
-                                                         object: nil);
+        let nc = NSNotificationCenter.defaultCenter()
+        
+        nc.addObserver( self,
+                        selector: Selector("updateCountdownDidUpdate:"),
+                        name: NotificationName.NotificationNameUpdateCountdown.rawValue,
+                        object: nil );
     }
     
     
