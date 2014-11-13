@@ -59,6 +59,22 @@ class MCTimer : NSObject {
         self.countDownValue = countDownValue
     }
     
+    
+    func stop() {
+    
+        self.timer.invalidate()
+        self.countDownValue = nil
+    }
+    
+    
+    func alarm() {
+        
+       stop()
+        
+        // TODO: Notify the delegate that the timer has finished.
+        println("ALARM! ALARM! ALARM!")
+    }
+    
 
     
     // ------------------------------------------------------------------------------------------
@@ -87,6 +103,9 @@ class MCTimer : NSObject {
         
         //TODO: This should go when hooked up.
         print("\(strMinutes):\(strSeconds) \n")
+        
+        // Stop the countdown because it has reached its end.
+        if minutes <= 0 && seconds <= 0  { alarm() }
     }
     
     
@@ -95,15 +114,15 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func setupTimer() {
     
-        if (timer.valid == false) {
+        if (!self.timer.valid) {
             
-            timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
-                                                            target:self,
-                                                            selector:Selector("updateTimer"),
-                                                            userInfo:nil,
-                                                            repeats:true )
+            self.timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
+                                                                target:self,
+                                                                selector:Selector("updateTimer"),
+                                                                userInfo:nil,
+                                                                repeats:true )
      
-            startTime = NSDate.timeIntervalSinceReferenceDate()
+            self.startTime = NSDate.timeIntervalSinceReferenceDate()
         }
     }
 }
