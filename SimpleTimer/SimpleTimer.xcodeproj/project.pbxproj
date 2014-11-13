@@ -22,6 +22,9 @@
 		522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
+		52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
+		52ED14071A155C2B003F9275 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE4A01A15557B00A67E09 /* UIColorExtension.swift */; };
+		52FAE4A11A15557B00A67E09 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE4A01A15557B00A67E09 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 		520842D21A1164C7003F19CE /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		5228948F1A1539D3006049C9 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationCenter.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Core/NotificationCenter/NotificationCenter.swift"; sourceTree = "<group>"; };
 		525543CB1A154F6A00425166 /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarView.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/StatusBarView/StatusBarView.swift"; sourceTree = "<group>"; };
+		52FAE4A01A15557B00A67E09 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = "../../../../../../../Extension-Projects/UIColor-Hex-Swift/UIColorExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				520842AE1A11516C003F19CE /* ApplicationDelegate */,
+				52FAE49F1A15556B00A67E09 /* Extensions */,
 				5228948E1A1539A7006049C9 /* NotificationCenter */,
 				520842C31A1155B1003F19CE /* Timer */,
 			);
@@ -229,6 +234,14 @@
 				525543CB1A154F6A00425166 /* StatusBarView.swift */,
 			);
 			path = StatusBarView;
+			sourceTree = "<group>";
+		};
+		52FAE49F1A15556B00A67E09 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE4A01A15557B00A67E09 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */,
+				52FAE4A11A15557B00A67E09 /* UIColorExtension.swift in Sources */,
 				520842CE1A11640A003F19CE /* TimerPopover.swift in Sources */,
 				520842D31A1164C7003F19CE /* StatusBar.swift in Sources */,
 				520842B81A11516C003F19CE /* AppDelegate.swift in Sources */,
@@ -346,6 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */,
+				52ED14071A155C2B003F9275 /* UIColorExtension.swift in Sources */,
 				520842CF1A11640A003F19CE /* TimerPopover.swift in Sources */,
 				520842D41A1164C7003F19CE /* StatusBar.swift in Sources */,
 				520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */,
