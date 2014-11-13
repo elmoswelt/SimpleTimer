@@ -1,5 +1,5 @@
 //
-//  MCTimerPopover.swift
+//  TimerPopover.swift
 //  SimpleTimer
 //
 //  Created by Elmar Tampe on 10/11/14.

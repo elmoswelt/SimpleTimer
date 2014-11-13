@@ -15,12 +15,13 @@
 		520842C61A1155B1003F19CE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* Timer.swift */; };
 		520842CA1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
 		520842CB1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
-		520842CE1A11640A003F19CE /* MCTimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* MCTimerPopover.swift */; };
-		520842CF1A11640A003F19CE /* MCTimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* MCTimerPopover.swift */; };
+		520842CE1A11640A003F19CE /* TimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* TimerPopover.swift */; };
+		520842CF1A11640A003F19CE /* TimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* TimerPopover.swift */; };
 		520842D31A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
 		520842D41A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
 		522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
+		525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +44,10 @@
 		520842B21A11516C003F19CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520842C41A1155B1003F19CE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		520842C91A1157D3003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		520842CD1A11640A003F19CE /* MCTimerPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTimerPopover.swift; sourceTree = "<group>"; };
+		520842CD1A11640A003F19CE /* TimerPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPopover.swift; sourceTree = "<group>"; };
 		520842D21A1164C7003F19CE /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		5228948F1A1539D3006049C9 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationCenter.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Core/NotificationCenter/NotificationCenter.swift"; sourceTree = "<group>"; };
+		525543CB1A154F6A00425166 /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarView.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/StatusBarView/StatusBarView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		520842B31A11516C003F19CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				525543CA1A154F5900425166 /* StatusBarView */,
 				520842CC1A1163F9003F19CE /* MainPopover */,
 				520842C71A1157D3003F19CE /* MainWindow */,
 			);
@@ -191,7 +194,7 @@
 		520842CC1A1163F9003F19CE /* MainPopover */ = {
 			isa = PBXGroup;
 			children = (
-				520842CD1A11640A003F19CE /* MCTimerPopover.swift */,
+				520842CD1A11640A003F19CE /* TimerPopover.swift */,
 			);
 			path = MainPopover;
 			sourceTree = "<group>";
@@ -218,6 +221,14 @@
 				5228948F1A1539D3006049C9 /* NotificationCenter.swift */,
 			);
 			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		525543CA1A154F5900425166 /* StatusBarView */ = {
+			isa = PBXGroup;
+			children = (
+				525543CB1A154F6A00425166 /* StatusBarView.swift */,
+			);
+			path = StatusBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842CE1A11640A003F19CE /* MCTimerPopover.swift in Sources */,
+				525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */,
+				520842CE1A11640A003F19CE /* TimerPopover.swift in Sources */,
 				520842D31A1164C7003F19CE /* StatusBar.swift in Sources */,
 				520842B81A11516C003F19CE /* AppDelegate.swift in Sources */,
 				520842C51A1155B1003F19CE /* Timer.swift in Sources */,
@@ -334,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842CF1A11640A003F19CE /* MCTimerPopover.swift in Sources */,
+				520842CF1A11640A003F19CE /* TimerPopover.swift in Sources */,
 				520842D41A1164C7003F19CE /* StatusBar.swift in Sources */,
 				520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */,
 				520842C61A1155B1003F19CE /* Timer.swift in Sources */,
