@@ -114,7 +114,7 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func setupTimer() {
     
-        if (self.timer.valid == false) {
+        if (!self.timer.valid) {
             
             self.timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
                                                                 target:self,
