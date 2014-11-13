@@ -102,7 +102,9 @@ class Timer : NSObject {
         let strSeconds = seconds > 9 ? String(seconds):"0" + String(seconds)
         
         //TODO: This should go when hooked up.
-        print("\(strMinutes):\(strSeconds) \n")
+//        print("\(strMinutes):\(strSeconds) \n")
+        
+        NotificationCenter.postUpdateCountdownNotification("\(strMinutes):\(strSeconds)")
         
         // Stop the countdown because it has reached its end.
         if minutes <= 0 && seconds <= 0  { alarm() }

@@ -15,9 +15,27 @@ class StatusBar:NSObject {
     var statusBar:NSStatusBar = NSStatusBar.systemStatusBar()
     var statusBarItem:NSStatusItem = NSStatusItem()
     
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Deinitialization
+    // ------------------------------------------------------------------------------------------
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    
     // ------------------------------------------------------------------------------------------
     //MARK: - Setup
     // ------------------------------------------------------------------------------------------
+    
+    func setup() {
+    
+        setupObserver()
+        setupStatusBar()
+    }
+    
+    
     func setupStatusBar() {
         
         // TODO: Fix the static length
@@ -30,10 +48,33 @@ class StatusBar:NSObject {
     }
     
     
+    func setupObserver() {
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: Selector("updateCountdownDidUpdate:"),
+                                                         name: NotificationName.NotificationNameUpdateCountdown.rawValue,
+                                                         object: nil);
+    }
+    
+    
     // ------------------------------------------------------------------------------------------
     //MARK: - Click Handling
     // ------------------------------------------------------------------------------------------
+    
     func didClickStatusBarItem(item: NSStatusItem) {
         println("FUNKY!")
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Countdown update notification
+    // ------------------------------------------------------------------------------------------
+    
+    func updateCountdownDidUpdate(aNotifcation: NSNotification) {
+        
+        if let countDown:String = aNotifcation.object as? NSString {
+        
+            statusBarItem.title = countDown
+        }
     }
 }

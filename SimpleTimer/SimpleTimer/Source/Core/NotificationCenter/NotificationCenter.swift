@@ -17,24 +17,22 @@ enum NotificationName : NSString {
 
 class NotificationCenter {
     
-    
     // ------------------------------------------------------------------------------------------
     //MARK: - Post Countdown Update
     // ------------------------------------------------------------------------------------------
     class func postUpdateCountdownNotification(countdownString: NSString) {
     
         NotificationCenter.postNotification(NotificationName.NotificationNameUpdateCountdown.rawValue,
-                                            object: nil,
-                                            userInfo: nil)
+                                            object:countdownString,
+                                            userInfo:nil)
     }
-
+    
 
     // ------------------------------------------------------------------------------------------
     //MARK: - Generic Notification Center Post
     // ------------------------------------------------------------------------------------------
     class func postNotification(aName: String, object anObject: AnyObject?, userInfo aUserInfo: [NSObject : AnyObject]?) {
-    
+        
         NSNotificationCenter.defaultCenter().postNotificationName(aName, object: anObject, userInfo: aUserInfo)
     }
-    
 }
