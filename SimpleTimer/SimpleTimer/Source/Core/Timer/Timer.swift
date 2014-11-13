@@ -1,5 +1,5 @@
 //
-//  MCTimer.swift
+//  Timer.swift
 //  SimpleTimer
 //
 //  Created by Elmar Tampe on 10/11/14.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-class MCTimer : NSObject {
+class Timer : NSObject {
     
     
     // ------------------------------------------------------------------------------------------
@@ -26,10 +26,10 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     //MARK: - Singleton
     // ------------------------------------------------------------------------------------------
-    class var shared : MCTimer {
+    class var shared : Timer {
         
         struct Static {
-            static let instance : MCTimer = MCTimer()
+            static let instance : Timer = Timer()
         }
         
         return Static.instance
@@ -41,7 +41,7 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func start() {
         
-        if self.countDownValue != nil {
+        if countDownValue != nil {
         
             setupTimer()
         }
@@ -62,8 +62,8 @@ class MCTimer : NSObject {
     
     func stop() {
     
-        self.timer.invalidate()
-        self.countDownValue = nil
+        timer.invalidate()
+        countDownValue = nil
     }
     
     
@@ -114,15 +114,15 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func setupTimer() {
     
-        if (!self.timer.valid) {
+        if (!timer.valid) {
             
-            self.timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
-                                                                target:self,
-                                                                selector:Selector("updateTimer"),
-                                                                userInfo:nil,
-                                                                repeats:true )
+            timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
+                                                            target:self,
+                                                            selector:Selector("updateTimer"),
+                                                            userInfo:nil,
+                                                            repeats:true )
      
-            self.startTime = NSDate.timeIntervalSinceReferenceDate()
+            startTime = NSDate.timeIntervalSinceReferenceDate()
         }
     }
 }
