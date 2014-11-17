@@ -10,6 +10,13 @@ import Foundation
 import Cocoa
 
 
+// ------------------------------------------------------------------------------------------
+
+let kcountDownTimerDefaultTime = "00:00:00"
+
+// ------------------------------------------------------------------------------------------
+
+
 class StatusBarView: NSView {
     
     var countdownTextField: NSTextField?
@@ -37,15 +44,15 @@ class StatusBarView: NSView {
     func setup() {
     
         setupStatusBarView()
+        setupIconImageView()
         setupTextField()
-        
     }
     
     
     func setupStatusBarView() {
         
         self.wantsLayer = true
-        self.layer?.backgroundColor = NSColor.redColor().CGColor
+        self.layer?.backgroundColor = NSColor.clearColor().CGColor
     }
     
     
@@ -56,11 +63,20 @@ class StatusBarView: NSView {
         countdownTextField?.drawsBackground = true
         countdownTextField?.editable = false
         countdownTextField?.selectable = false
-        countdownTextField?.backgroundColor = NSColor.greenColor()
+        countdownTextField?.backgroundColor = NSColor.clearColor()
         
-        self.setAttributedCountdownString("00:00:00")
+        self.setAttributedCountdownString(kcountDownTimerDefaultTime)
         
         self.addSubview(countdownTextField!)
+    }
+    
+    
+    func setupIconImageView() {
+    
+        let imageView = NSImageView(frame: CGRectMake(0.0, 0.0, 22.0, 22.0))
+        imageView.image = NSImage(named: "MCClockIcon")
+        
+        self.addSubview(imageView)
     }
     
     
@@ -75,12 +91,44 @@ class StatusBarView: NSView {
     }
     
     
-    
     func stringAttributes() -> NSDictionary {
     
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = NSTextAlignment.CenterTextAlignment
         
         return [NSParagraphStyleAttributeName : paragraphStyle]
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Mouse Click Handling
+    // ------------------------------------------------------------------------------------------
+    override func mouseDown(theEvent: NSEvent) {
+        
+        showPopover()
+    }
+    
+    override func mouseUp(theEvent: NSEvent) {
+        
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Popover Handling
+    // ------------------------------------------------------------------------------------------
+    func showPopover() {
+    
+        let popover = NSPopover()
+        
+        popover.contentViewController = NSViewController()
+        
+        popover.showRelativeToRect(self.frame, ofView: self, preferredEdge: NSMinYEdge)
+        
+    }
+    
+    
+    func dismissPopover(){
+    
+    
     }
 }

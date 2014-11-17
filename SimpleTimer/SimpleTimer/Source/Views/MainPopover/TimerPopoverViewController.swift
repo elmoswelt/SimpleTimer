@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import Cocoa
 
-class TimerPopoverController {
+class TimerPopoverViewController : NSViewController {
     
 }
