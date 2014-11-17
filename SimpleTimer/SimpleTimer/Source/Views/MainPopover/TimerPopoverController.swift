@@ -1,5 +1,5 @@
 //
-//  TimerPopover.swift
+//  TimerPopoverController.swift
 //  SimpleTimer
 //
 //  Created by Elmar Tampe on 10/11/14.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class TimerPopoverController {
+    
+}
