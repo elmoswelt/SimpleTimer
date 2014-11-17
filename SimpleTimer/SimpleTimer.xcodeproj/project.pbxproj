@@ -10,15 +10,24 @@
 		520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208429F1A114C4D003F19CE /* SimpleTimerTests.swift */; };
 		520842B71A11516C003F19CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520842AB1A11516C003F19CE /* Images.xcassets */; };
 		520842B81A11516C003F19CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842AF1A11516C003F19CE /* AppDelegate.swift */; };
-		520842B91A11516C003F19CE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520842B21A11516C003F19CE /* Info.plist */; };
-		520842C51A1155B1003F19CE /* MCTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* MCTimer.swift */; };
-		520842C61A1155B1003F19CE /* MCTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* MCTimer.swift */; };
-		520842CA1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
-		520842CB1A1157D3003F19CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520842C81A1157D3003F19CE /* MainMenu.xib */; };
-		520842CE1A11640A003F19CE /* MCTimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* MCTimerPopover.swift */; };
-		520842CF1A11640A003F19CE /* MCTimerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842CD1A11640A003F19CE /* MCTimerPopover.swift */; };
-		520842D31A1164C7003F19CE /* MCStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* MCStatusBar.swift */; };
-		520842D41A1164C7003F19CE /* MCStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* MCStatusBar.swift */; };
+		520842C51A1155B1003F19CE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* Timer.swift */; };
+		520842C61A1155B1003F19CE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* Timer.swift */; };
+		520842D31A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
+		520842D41A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
+		522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
+		522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
+		5228CD241A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */; };
+		5228CD251A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */; };
+		5228CD2A1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */; };
+		5228CD2B1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */; };
+		5238AED81A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
+		5238AED91A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
+		525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
+		52DBE5BA1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
+		52DBE5BB1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
+		52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
+		52FAE6FE1A1A9870003FA3B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
+		52FAE6FF1A1A9870003FA3B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +48,15 @@
 		520842AB1A11516C003F19CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		520842AF1A11516C003F19CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520842B21A11516C003F19CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		520842C41A1155B1003F19CE /* MCTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTimer.swift; sourceTree = "<group>"; };
-		520842C91A1157D3003F19CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		520842CD1A11640A003F19CE /* MCTimerPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTimerPopover.swift; sourceTree = "<group>"; };
-		520842D21A1164C7003F19CE /* MCStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCStatusBar.swift; sourceTree = "<group>"; };
+		520842C41A1155B1003F19CE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		520842D21A1164C7003F19CE /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		5228948F1A1539D3006049C9 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationCenter.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Core/NotificationCenter/NotificationCenter.swift"; sourceTree = "<group>"; };
+		5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopoverViewController.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/MainPopoverViewController.swift"; sourceTree = "<group>"; };
+		5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPopoverView.xib; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/MainPopoverView.xib"; sourceTree = "<group>"; };
+		5238AED71A15634A00B040C0 /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSColorExtensions.swift; path = "../../../../../../../Extension-Projects/SwiftExtensions/Source/NSColor/NSColorExtensions.swift"; sourceTree = "<group>"; };
+		525543CB1A154F6A00425166 /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarView.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/StatusBarView/StatusBarView.swift"; sourceTree = "<group>"; };
+		52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewExtensions.swift; path = "../../../../../../../../Mountaincoders/Extension-Projects/SwiftExtensions/Source/NSView/NSViewExtensions.swift"; sourceTree = "<group>"; };
+		52FAE6FD1A1A9870003FA3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				520842AE1A11516C003F19CE /* ApplicationDelegate */,
+				52FAE49F1A15556B00A67E09 /* Extensions */,
+				5228948E1A1539A7006049C9 /* NotificationCenter */,
 				520842C31A1155B1003F19CE /* Timer */,
 			);
 			path = Core;
@@ -162,6 +178,7 @@
 		520842B31A11516C003F19CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				525543CA1A154F5900425166 /* StatusBarView */,
 				520842CC1A1163F9003F19CE /* MainPopover */,
 				520842C71A1157D3003F19CE /* MainWindow */,
 			);
@@ -171,7 +188,7 @@
 		520842C31A1155B1003F19CE /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				520842C41A1155B1003F19CE /* MCTimer.swift */,
+				520842C41A1155B1003F19CE /* Timer.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -179,7 +196,7 @@
 		520842C71A1157D3003F19CE /* MainWindow */ = {
 			isa = PBXGroup;
 			children = (
-				520842C81A1157D3003F19CE /* MainMenu.xib */,
+				52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */,
 			);
 			path = MainWindow;
 			sourceTree = "<group>";
@@ -187,7 +204,8 @@
 		520842CC1A1163F9003F19CE /* MainPopover */ = {
 			isa = PBXGroup;
 			children = (
-				520842CD1A11640A003F19CE /* MCTimerPopover.swift */,
+				5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */,
+				5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */,
 			);
 			path = MainPopover;
 			sourceTree = "<group>";
@@ -203,9 +221,34 @@
 		520842D11A1164B9003F19CE /* StatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				520842D21A1164C7003F19CE /* MCStatusBar.swift */,
+				520842D21A1164C7003F19CE /* StatusBar.swift */,
 			);
 			path = StatusBar;
+			sourceTree = "<group>";
+		};
+		5228948E1A1539A7006049C9 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				5228948F1A1539D3006049C9 /* NotificationCenter.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		525543CA1A154F5900425166 /* StatusBarView */ = {
+			isa = PBXGroup;
+			children = (
+				525543CB1A154F6A00425166 /* StatusBarView.swift */,
+			);
+			path = StatusBarView;
+			sourceTree = "<group>";
+		};
+		52FAE49F1A15556B00A67E09 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */,
+				5238AED71A15634A00B040C0 /* NSColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +332,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842B91A11516C003F19CE /* Info.plist in Resources */,
 				520842B71A11516C003F19CE /* Images.xcassets in Resources */,
-				520842CA1A1157D3003F19CE /* MainMenu.xib in Resources */,
+				52FAE6FE1A1A9870003FA3B3 /* MainMenu.xib in Resources */,
+				5228CD2A1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +342,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842CB1A1157D3003F19CE /* MainMenu.xib in Resources */,
+				52FAE6FF1A1A9870003FA3B3 /* MainMenu.xib in Resources */,
+				5228CD2B1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842CE1A11640A003F19CE /* MCTimerPopover.swift in Sources */,
-				520842D31A1164C7003F19CE /* MCStatusBar.swift in Sources */,
+				525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */,
+				5228CD241A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */,
+				520842D31A1164C7003F19CE /* StatusBar.swift in Sources */,
+				5238AED81A15634A00B040C0 /* NSColorExtensions.swift in Sources */,
 				520842B81A11516C003F19CE /* AppDelegate.swift in Sources */,
-				520842C51A1155B1003F19CE /* MCTimer.swift in Sources */,
+				52DBE5BA1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */,
+				520842C51A1155B1003F19CE /* Timer.swift in Sources */,
+				522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,10 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842CF1A11640A003F19CE /* MCTimerPopover.swift in Sources */,
-				520842D41A1164C7003F19CE /* MCStatusBar.swift in Sources */,
+				52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */,
+				5228CD251A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */,
+				520842D41A1164C7003F19CE /* StatusBar.swift in Sources */,
+				5238AED91A15634A00B040C0 /* NSColorExtensions.swift in Sources */,
 				520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */,
-				520842C61A1155B1003F19CE /* MCTimer.swift in Sources */,
+				52DBE5BB1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */,
+				520842C61A1155B1003F19CE /* Timer.swift in Sources */,
+				522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,12 +391,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		520842C81A1157D3003F19CE /* MainMenu.xib */ = {
+		52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				520842C91A1157D3003F19CE /* Base */,
+				52FAE6FD1A1A9870003FA3B3 /* Base */,
 			);
 			name = MainMenu.xib;
+			path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainWindow/Base.lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -504,6 +557,7 @@
 				520842A51A114C4D003F19CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		520842A61A114C4D003F19CE /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +566,7 @@
 				520842A81A114C4D003F19CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

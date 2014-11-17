@@ -1,5 +1,5 @@
 //
-//  MCTimer.swift
+//  Timer.swift
 //  SimpleTimer
 //
 //  Created by Elmar Tampe on 10/11/14.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-class MCTimer : NSObject {
+class Timer : NSObject {
     
     
     // ------------------------------------------------------------------------------------------
@@ -26,10 +26,10 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     //MARK: - Singleton
     // ------------------------------------------------------------------------------------------
-    class var shared : MCTimer {
+    class var shared : Timer {
         
         struct Static {
-            static let instance : MCTimer = MCTimer()
+            static let instance : Timer = Timer()
         }
         
         return Static.instance
@@ -41,7 +41,7 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func start() {
         
-        if self.countDownValue != nil {
+        if countDownValue != nil {
         
             setupTimer()
         }
@@ -62,8 +62,8 @@ class MCTimer : NSObject {
     
     func stop() {
     
-        self.timer.invalidate()
-        self.countDownValue = nil
+        timer.invalidate()
+        countDownValue = nil
     }
     
     
@@ -91,21 +91,24 @@ class MCTimer : NSObject {
         // The countdown timer calling backwards from the start countdown value
         let countDownTimer:NSTimeInterval = countDownValue! - elapsedTime
         
+        // Calculate the hours
+        let hours:Int = Int(countDownTimer / 3600)
+        
         // Calculate the minutes
-        let minutes:Int = Int(countDownTimer / 60.0)
+        let minutes:Int = Int((countDownTimer / 60) % 60)
         
         // Calculate the seconds
-        let seconds:Int = Int(countDownTimer % 60.0)
+        let seconds:Int = Int(countDownTimer % 60)
         
         // Align the minutes and seconds to fit the two digit style
+        let strHours = hours > 9 ? String(hours):"0" + String(hours)
         let strMinutes = minutes > 9 ? String(minutes):"0" + String(minutes)
         let strSeconds = seconds > 9 ? String(seconds):"0" + String(seconds)
         
-        //TODO: This should go when hooked up.
-        print("\(strMinutes):\(strSeconds) \n")
+        NotificationCenter.postUpdateCountdownNotification("\(strHours):\(strMinutes):\(strSeconds)")
         
         // Stop the countdown because it has reached its end.
-        if minutes <= 0 && seconds <= 0  { alarm() }
+        if minutes <= 0 && seconds <= 0 && hours <= 0 { alarm() }
     }
     
     
@@ -114,15 +117,15 @@ class MCTimer : NSObject {
     // ------------------------------------------------------------------------------------------
     func setupTimer() {
     
-        if (!self.timer.valid) {
+        if (!timer.valid) {
             
-            self.timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
-                                                                target:self,
-                                                                selector:Selector("updateTimer"),
-                                                                userInfo:nil,
-                                                                repeats:true )
+            timer = NSTimer.scheduledTimerWithTimeInterval( 0.01,
+                                                            target:self,
+                                                            selector:Selector("updateTimer"),
+                                                            userInfo:nil,
+                                                            repeats:true )
      
-            self.startTime = NSDate.timeIntervalSinceReferenceDate()
+            startTime = NSDate.timeIntervalSinceReferenceDate()
         }
     }
 }
