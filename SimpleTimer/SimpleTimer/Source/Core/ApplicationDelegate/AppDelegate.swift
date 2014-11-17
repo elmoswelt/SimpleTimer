@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     {
         statusBar.setup()
         
-        timer.setCountDownValue(25.0)
+        timer.setCountDownValue(3610)
         timer.start()
     }
     
