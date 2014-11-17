@@ -17,7 +17,7 @@ let kcountDownTimerDefaultTime = "00:00:00"
 // ------------------------------------------------------------------------------------------
 
 
-class StatusBarView: NSView {
+class StatusBarView: NSView, NSPopoverDelegate{
     
     var countdownTextField: NSTextField?
     
@@ -85,9 +85,12 @@ class StatusBarView: NSView {
     // ------------------------------------------------------------------------------------------
     func setAttributedCountdownString(countDownString: NSString) {
         
-        let attrString = NSAttributedString(string: countDownString, attributes: stringAttributes())
-        
-        countdownTextField?.attributedStringValue = attrString
+        if countDownString != countdownTextField!.attributedStringValue.string {
+
+            let attrString = NSAttributedString(string: countDownString, attributes: stringAttributes())
+            
+            countdownTextField?.attributedStringValue = attrString
+        }
     }
     
     
@@ -116,14 +119,17 @@ class StatusBarView: NSView {
     // ------------------------------------------------------------------------------------------
     //MARK: - Popover Handling
     // ------------------------------------------------------------------------------------------
+    
     func showPopover() {
     
         let popover = NSPopover()
         
-        popover.contentViewController = NSViewController()
+        popover.behavior = NSPopoverBehavior.Transient
+        
+        popover.contentViewController = MainPopoverViewController(nibName: "MainPopoverView", bundle: nil)
         
         popover.showRelativeToRect(self.frame, ofView: self, preferredEdge: NSMinYEdge)
-        
+        popover.delegate = self
     }
     
     
@@ -131,4 +137,14 @@ class StatusBarView: NSView {
     
     
     }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Popover Delegate
+    // ------------------------------------------------------------------------------------------
+    func popoverDidClose(notification: NSNotification) {
+    
+    
+    }
+
 }

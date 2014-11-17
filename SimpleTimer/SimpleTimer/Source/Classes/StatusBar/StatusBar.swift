@@ -81,7 +81,6 @@ class StatusBar:NSObject {
     func updateCountdownDidUpdate(aNotifcation: NSNotification) {
         
         if let countDown:String = aNotifcation.object as? NSString {
-        
             statusBarView.setAttributedCountdownString(countDown)
         }
     }
