@@ -12,13 +12,15 @@ import Cocoa
 
 class StatusBarView: NSView {
     
+    var countdownTextField: NSTextField?
+    
     // ------------------------------------------------------------------------------------------
     //MARK: - Initialization
     // ------------------------------------------------------------------------------------------
     
     override init() {
         
-        super.init(frame: CGRectMake(0.0, 0.0, 100.0, 20.0))
+        super.init(frame: CGRectMake(0.0, 0.0, 80.0, 22.0))
 
         setup()
     }
@@ -34,8 +36,51 @@ class StatusBarView: NSView {
     
     func setup() {
     
+        setupStatusBarView()
+        setupTextField()
+        
+    }
+    
+    
+    func setupStatusBarView() {
+        
         self.wantsLayer = true
-        var color = NSColor(rgba: "#03c6ff").CGColor
-        self.layer?.backgroundColor = color
+        self.layer?.backgroundColor = NSColor.redColor().CGColor
+    }
+    
+    
+    func setupTextField() {
+    
+        countdownTextField = NSTextField(frame: CGRectMake(20.0, -2.0, 60.0, 22.0))
+        countdownTextField?.bezeled = false
+        countdownTextField?.drawsBackground = true
+        countdownTextField?.editable = false
+        countdownTextField?.selectable = false
+        countdownTextField?.backgroundColor = NSColor.greenColor()
+        
+        self.setAttributedCountdownString("00:00:00")
+        
+        self.addSubview(countdownTextField!)
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Attributed String
+    // ------------------------------------------------------------------------------------------
+    func setAttributedCountdownString(countDownString: NSString) {
+        
+        let attrString = NSAttributedString(string: countDownString, attributes: stringAttributes())
+        
+        countdownTextField?.attributedStringValue = attrString
+    }
+    
+    
+    
+    func stringAttributes() -> NSDictionary {
+    
+        var paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = NSTextAlignment.CenterTextAlignment
+        
+        return [NSParagraphStyleAttributeName : paragraphStyle]
     }
 }

@@ -12,8 +12,9 @@ import Cocoa
 
 class StatusBar:NSObject {
     
-    var statusBar:NSStatusBar = NSStatusBar.systemStatusBar()
-    var statusBarItem:NSStatusItem = NSStatusItem()
+    var statusBar = NSStatusBar.systemStatusBar()
+    var statusBarItem = NSStatusItem()
+    var statusBarView = StatusBarView()
     
     
     // ------------------------------------------------------------------------------------------
@@ -33,6 +34,7 @@ class StatusBar:NSObject {
     
         setupObserver()
         setupStatusBar()
+        setupStatusBarView()
     }
     
     
@@ -40,11 +42,15 @@ class StatusBar:NSObject {
         
         // TODO: Fix the static length
         statusBarItem = statusBar.statusItemWithLength(80.0)
-        // TODO: Fix the value here, should be timer based
-        statusBarItem.title = "04:53" 
-        statusBarItem.image = NSImage(named:"MCClockIcon")
         statusBarItem.target = self;
         statusBarItem.action = Selector("didClickStatusBarItem:")
+    }
+    
+    
+    func setupStatusBarView() {
+    
+        statusBarView = StatusBarView()
+        statusBarItem.view = statusBarView
     }
     
     
@@ -76,7 +82,7 @@ class StatusBar:NSObject {
         
         if let countDown:String = aNotifcation.object as? NSString {
         
-            statusBarItem.title = countDown
+            statusBarView.setAttributedCountdownString(countDown)
         }
     }
 }
