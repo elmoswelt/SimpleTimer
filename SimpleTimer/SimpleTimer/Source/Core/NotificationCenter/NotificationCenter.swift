@@ -10,8 +10,10 @@ import Foundation
 
 enum NotificationName : NSString {
 
-    case NotificationNameUpdateCountdown = "NotificationCenterUpdateCountdownNotification"
-    
+    case NotificationNameUpdateCountdown    = "NotificationCenterUpdateCountdownNotification"
+    case NotificationNameTimerDidStart      = "NotificationCenterTimerDidStartNotification"
+    case NotificationNameTimerDidStop       = "NotificationCenterTimerDidStopNotification"
+    case NotificationNameTimerDidPause      = "NotificationCenterTimerDidPauseNotification"
 }
 
 
@@ -24,6 +26,33 @@ class NotificationCenter {
     
         NotificationCenter.postNotification(NotificationName.NotificationNameUpdateCountdown.rawValue,
                                             object:countdownString,
+                                            userInfo:nil)
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Timer Functionality Notifications
+    // ------------------------------------------------------------------------------------------
+    class func postTimerDidStartNotification() {
+        
+        NotificationCenter.postNotification(NotificationName.NotificationNameTimerDidStart.rawValue,
+                                            object:nil,
+                                            userInfo:nil)
+    }
+    
+    
+    class func postTimerDidStopNotification() {
+        
+        NotificationCenter.postNotification(NotificationName.NotificationNameTimerDidStop.rawValue,
+                                            object:nil,
+                                            userInfo:nil)
+    }
+    
+    
+    class func postTimerDidPauseNotification() {
+        
+        NotificationCenter.postNotification(NotificationName.NotificationNameTimerDidPause.rawValue,
+                                            object:nil,
                                             userInfo:nil)
     }
     

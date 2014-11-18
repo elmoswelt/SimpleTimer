@@ -74,7 +74,7 @@ class StatusBarView: NSView, NSPopoverDelegate{
     func setupIconImageView() {
     
         let imageView = NSImageView(frame: CGRectMake(0.0, 0.0, 22.0, 22.0))
-        imageView.image = NSImage(named: "MCClockIcon")
+        imageView.image = NSImage(named: "Start")
         
         self.addSubview(imageView)
     }
@@ -122,9 +122,10 @@ class StatusBarView: NSView, NSPopoverDelegate{
     
     func showPopover() {
     
-        let popover = NSPopover()
+        let popover:NSPopover = NSPopover()
         
         popover.behavior = NSPopoverBehavior.Transient
+        popover.appearance = NSAppearance(named: NSAppearanceNameAqua)
         
         popover.contentViewController = MainPopoverViewController(nibName: "MainPopoverView", bundle: nil)
         
@@ -133,7 +134,7 @@ class StatusBarView: NSView, NSPopoverDelegate{
     }
     
     
-    func dismissPopover(){
+    func dismissPopover() {
     
     
     }

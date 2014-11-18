@@ -12,26 +12,70 @@ import Cocoa
 
 class MainPopoverViewController : NSViewController {
     
-    @IBOutlet var countDownTextField:NSTextField?
-    @IBOutlet var descriptionTextField:NSTextField?
- 
     
-    override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    // ------------------------------------------------------------------------------------------
+    
+    @IBOutlet var countDownTextField:NSTextField?
+    @IBOutlet var timeUnitTextField:NSTextField?
+    @IBOutlet var descriptionTextField:NSTextField?
+
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - View Lifecycle
+    // ------------------------------------------------------------------------------------------
+    
+    override func viewDidLoad() {
         
         setup()
-
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.viewDidLoad()
     }
     
     
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Deinitialization
+    // ------------------------------------------------------------------------------------------
+    
+    deinit {
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+        
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Setup
+    // ------------------------------------------------------------------------------------------
     func setup() {
     
         setupObserver()
+        setupView()
+        setupDescriptionTextField()
+    }
+    
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - View Setup
+    // ------------------------------------------------------------------------------------------
+    
+    func setupView() {
+    
+        view.wantsLayer = true
+    }
+    
+    
+    func setupDescriptionTextField() {
+    
+        descriptionTextField?.textColor = NSColor.colorWithHexValue("#CFCFCF")
+        
+        if Timer.shared.isRunning {
+        
+            descriptionTextField?.stringValue = ""
+            countDownTextField?.textColor = kRedColor
+        }
+        else {
+            descriptionTextField?.stringValue = "SET A TIME"
+            countDownTextField?.textColor = kBlackColor
+        }
     }
     
     
@@ -47,6 +91,11 @@ class MainPopoverViewController : NSViewController {
             selector: Selector("updateCountdownDidUpdate:"),
             name: NotificationName.NotificationNameUpdateCountdown.rawValue,
             object: nil );
+    
+        nc.addObserver( self,
+            selector: Selector("countdownDidStartNotification:"),
+            name: NotificationName.NotificationNameTimerDidStop.rawValue,
+            object: nil );
     }
     
     
@@ -60,18 +109,10 @@ class MainPopoverViewController : NSViewController {
             
             if countDown != countDownTextField?.stringValue {
                 countDownTextField?.stringValue = countDown
+                descriptionTextField?.stringValue = ""
             }
         }
     }
     
     
-    // ------------------------------------------------------------------------------------------
-    //MARK: - Deinitialization
-    // ------------------------------------------------------------------------------------------
-    
-    deinit {
-        
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-        
-    }
 }
