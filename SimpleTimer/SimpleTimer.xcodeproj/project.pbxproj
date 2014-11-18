@@ -14,6 +14,7 @@
 		520842C61A1155B1003F19CE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* Timer.swift */; };
 		520842D31A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
 		520842D41A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
+		52114EAE1A1B6D8700FCC1C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 		522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		5228CD241A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */; };
@@ -26,7 +27,6 @@
 		52DBE5BA1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
 		52DBE5BB1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
 		52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
-		52FAE6FE1A1A9870003FA3B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 		52FAE6FF1A1A9870003FA3B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -333,8 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				520842B71A11516C003F19CE /* Images.xcassets in Resources */,
-				52FAE6FE1A1A9870003FA3B3 /* MainMenu.xib in Resources */,
 				5228CD2A1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */,
+				52114EAE1A1B6D8700FCC1C3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
