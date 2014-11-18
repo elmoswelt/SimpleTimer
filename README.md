@@ -3,7 +3,7 @@ SimpleTimer
 
 Simple Timer for Mac
 
-![ScreenShot](/Templates/SimpleTimer.png)
+![ScreenShot](/Templates/SimpleTimer_UI_v01.png)
 
 - Application
 
@@ -29,3 +29,4 @@ Simple Timer for Mac
 		- Alarm Sound/Blink
 		
 ![ScreenShot](/Templates/Artboard_1.png)
+
