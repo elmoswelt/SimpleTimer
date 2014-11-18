@@ -3,7 +3,7 @@ SimpleTimer
 
 Simple Timer for Mac
 
-![ScreenShot](/SimpleTimer_UI_v01.png)
+![ScreenShot](/Templates/SimpleTimer_UI_v01.png)
 
 - Application
 
