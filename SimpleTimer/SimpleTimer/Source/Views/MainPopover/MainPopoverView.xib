@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
@@ -7,7 +7,8 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MainPopoverViewController" customModule="SimpleTimer" customModuleProvider="target">
             <connections>
                 <outlet property="countDownTextField" destination="dej-AH-G3g" id="jBh-AO-hqh"/>
-                <outlet property="descriptionTextField" destination="pIf-zX-AcA" id="xWK-aS-ifg"/>
+                <outlet property="descriptionTextField" destination="ND0-bS-nk3" id="cff-4D-UBB"/>
+                <outlet property="timeUnitTextField" destination="pIf-zX-AcA" id="yVT-w5-Y4a"/>
                 <outlet property="view" destination="c22-O7-iKe" id="pWE-G8-IyX"/>
             </connections>
         </customObject>
@@ -17,20 +18,31 @@
             <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24U-iY-GMx" customClass="CircleView" customModule="SimpleTimer" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIf-zX-AcA">
                     <rect key="frame" x="18" y="72" width="220" height="37"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="MINUTES" id="wxX-hG-Nkq">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" id="wxX-hG-Nkq">
                         <font key="font" metaFont="system" size="21"/>
                         <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dej-AH-G3g" userLabel="CountDown">
-                    <rect key="frame" x="18" y="120" width="220" height="43"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" id="dXy-ve-a1d">
+                    <rect key="frame" x="18" y="108" width="220" height="43"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" id="dXy-ve-a1d">
                         <font key="font" metaFont="system" size="30"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ND0-bS-nk3" userLabel="Description">
+                    <rect key="frame" x="12" y="108" width="232" height="29"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="SET A TIME" id="og9-GC-Gre">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </textFieldCell>
                 </textField>
             </subviews>

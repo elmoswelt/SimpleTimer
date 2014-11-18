@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5202597A1A1BB200004ACDD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520259791A1BB200004ACDD9 /* Images.xcassets */; };
 		520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208429F1A114C4D003F19CE /* SimpleTimerTests.swift */; };
-		520842B71A11516C003F19CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520842AB1A11516C003F19CE /* Images.xcassets */; };
 		520842B81A11516C003F19CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842AF1A11516C003F19CE /* AppDelegate.swift */; };
 		520842C51A1155B1003F19CE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* Timer.swift */; };
 		520842C61A1155B1003F19CE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842C41A1155B1003F19CE /* Timer.swift */; };
 		520842D31A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
 		520842D41A1164C7003F19CE /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520842D21A1164C7003F19CE /* StatusBar.swift */; };
+		52114EAE1A1B6D8700FCC1C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 		522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228948F1A1539D3006049C9 /* NotificationCenter.swift */; };
 		5228CD241A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */; };
@@ -23,10 +24,11 @@
 		5238AED81A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
 		5238AED91A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
 		525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
+		529D036F1A1BA2E200B0DAB2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D036E1A1BA2E200B0DAB2 /* CircleView.swift */; };
+		529D03701A1BA2E200B0DAB2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D036E1A1BA2E200B0DAB2 /* CircleView.swift */; };
 		52DBE5BA1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
 		52DBE5BB1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
 		52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
-		52FAE6FE1A1A9870003FA3B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 		52FAE6FF1A1A9870003FA3B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -41,11 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520259791A1BB200004ACDD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../../../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		520842891A114C4D003F19CE /* SimpleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520842991A114C4D003F19CE /* SimpleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5208429E1A114C4D003F19CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5208429F1A114C4D003F19CE /* SimpleTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerTests.swift; sourceTree = "<group>"; };
-		520842AB1A11516C003F19CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		520842AF1A11516C003F19CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520842B21A11516C003F19CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520842C41A1155B1003F19CE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPopoverView.xib; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/MainPopoverView.xib"; sourceTree = "<group>"; };
 		5238AED71A15634A00B040C0 /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSColorExtensions.swift; path = "../../../../../../../Extension-Projects/SwiftExtensions/Source/NSColor/NSColorExtensions.swift"; sourceTree = "<group>"; };
 		525543CB1A154F6A00425166 /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarView.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/StatusBarView/StatusBarView.swift"; sourceTree = "<group>"; };
+		529D036E1A1BA2E200B0DAB2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewExtensions.swift; path = "../../../../../../../../Mountaincoders/Extension-Projects/SwiftExtensions/Source/NSView/NSViewExtensions.swift"; sourceTree = "<group>"; };
 		52FAE6FD1A1A9870003FA3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +139,7 @@
 		520842AA1A11516C003F19CE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				520842AB1A11516C003F19CE /* Images.xcassets */,
+				520259791A1BB200004ACDD9 /* Images.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 		520842CC1A1163F9003F19CE /* MainPopover */ = {
 			isa = PBXGroup;
 			children = (
+				529D036D1A1BA21F00B0DAB2 /* CircleView */,
 				5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */,
 				5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */,
 			);
@@ -240,6 +244,15 @@
 				525543CB1A154F6A00425166 /* StatusBarView.swift */,
 			);
 			path = StatusBarView;
+			sourceTree = "<group>";
+		};
+		529D036D1A1BA21F00B0DAB2 /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				529D036E1A1BA2E200B0DAB2 /* CircleView.swift */,
+			);
+			name = CircleView;
+			path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/CircleView";
 			sourceTree = "<group>";
 		};
 		52FAE49F1A15556B00A67E09 /* Extensions */ = {
@@ -332,9 +345,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520842B71A11516C003F19CE /* Images.xcassets in Resources */,
-				52FAE6FE1A1A9870003FA3B3 /* MainMenu.xib in Resources */,
+				5202597A1A1BB200004ACDD9 /* Images.xcassets in Resources */,
 				5228CD2A1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */,
+				52114EAE1A1B6D8700FCC1C3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529D036F1A1BA2E200B0DAB2 /* CircleView.swift in Sources */,
 				525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */,
 				5228CD241A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */,
 				520842D31A1164C7003F19CE /* StatusBar.swift in Sources */,
@@ -369,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529D03701A1BA2E200B0DAB2 /* CircleView.swift in Sources */,
 				52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */,
 				5228CD251A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */,
 				520842D41A1164C7003F19CE /* StatusBar.swift in Sources */,

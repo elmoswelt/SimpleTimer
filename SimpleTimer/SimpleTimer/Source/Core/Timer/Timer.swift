@@ -13,11 +13,10 @@ class Timer : NSObject {
     
     
     // ------------------------------------------------------------------------------------------
-    
-    // Used  properties
+
+    var isRunning:Bool = false
     var startTime:NSTimeInterval = NSTimeInterval()
     var timer:NSTimer = NSTimer()
-    
     var countDownValue:NSTimeInterval?
     
     // ------------------------------------------------------------------------------------------
@@ -44,6 +43,9 @@ class Timer : NSObject {
         if countDownValue != nil {
         
             setupTimer()
+            NotificationCenter.postTimerDidStartNotification()
+            isRunning = true
+            
         }
         else {
             println("[!] Error, no countdown set.")
@@ -64,6 +66,7 @@ class Timer : NSObject {
     
         timer.invalidate()
         countDownValue = nil
+        isRunning = false
     }
     
     
