@@ -21,6 +21,7 @@
 		5238AED81A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
 		5238AED91A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
 		525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
+		525559A51A1E42C20006BB76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276354A1A1E3D6300AA5B50 /* Images.xcassets */; };
 		5276354B1A1E3D6300AA5B50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276354A1A1E3D6300AA5B50 /* Images.xcassets */; };
 		5290B7991A1E3F8100EC5730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290B7981A1E3F8100EC5730 /* AppDelegate.swift */; };
 		5299837F1A1E403B004D32E2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
@@ -356,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525559A51A1E42C20006BB76 /* Images.xcassets in Resources */,
 				5299837F1A1E403B004D32E2 /* MainMenu.xib in Resources */,
 				5228CD2B1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */,
 			);
