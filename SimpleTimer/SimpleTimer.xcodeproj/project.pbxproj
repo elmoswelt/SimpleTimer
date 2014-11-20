@@ -18,8 +18,6 @@
 		5228CD251A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */; };
 		5228CD2A1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */; };
 		5228CD2B1A1A9DF9007C20EC /* MainPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */; };
-		5238AED81A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
-		5238AED91A15634A00B040C0 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238AED71A15634A00B040C0 /* NSColorExtensions.swift */; };
 		525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
 		525559A51A1E42C20006BB76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276354A1A1E3D6300AA5B50 /* Images.xcassets */; };
 		5276354B1A1E3D6300AA5B50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276354A1A1E3D6300AA5B50 /* Images.xcassets */; };
@@ -28,8 +26,11 @@
 		529983801A1E40CD004D32E2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE6FC1A1A9870003FA3B3 /* MainMenu.xib */; };
 		529D036F1A1BA2E200B0DAB2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D036E1A1BA2E200B0DAB2 /* CircleView.swift */; };
 		529D03701A1BA2E200B0DAB2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D036E1A1BA2E200B0DAB2 /* CircleView.swift */; };
-		52DBE5BA1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
-		52DBE5BB1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */; };
+		52A1351B1A1E48A80017BAA1 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BEE9731A1E48720052B641 /* NSViewExtensions.swift */; };
+		52A1351C1A1E48AC0017BAA1 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BEE9721A1E48720052B641 /* NSColorExtensions.swift */; };
+		52BEE9611A1E479C0052B641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290B7981A1E3F8100EC5730 /* AppDelegate.swift */; };
+		52BEE9741A1E48720052B641 /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BEE9721A1E48720052B641 /* NSColorExtensions.swift */; };
+		52BEE9751A1E48720052B641 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BEE9731A1E48720052B641 /* NSViewExtensions.swift */; };
 		52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525543CB1A154F6A00425166 /* StatusBarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,12 +55,12 @@
 		5228948F1A1539D3006049C9 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationCenter.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Core/NotificationCenter/NotificationCenter.swift"; sourceTree = "<group>"; };
 		5228CD231A1A9D8D007C20EC /* MainPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPopoverViewController.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/MainPopoverViewController.swift"; sourceTree = "<group>"; };
 		5228CD291A1A9DF9007C20EC /* MainPopoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPopoverView.xib; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/MainPopoverView.xib"; sourceTree = "<group>"; };
-		5238AED71A15634A00B040C0 /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSColorExtensions.swift; path = "../../../../../../../Extension-Projects/SwiftExtensions/Source/NSColor/NSColorExtensions.swift"; sourceTree = "<group>"; };
 		525543CB1A154F6A00425166 /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarView.swift; path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/StatusBarView/StatusBarView.swift"; sourceTree = "<group>"; };
 		5276354A1A1E3D6300AA5B50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Assets/Images.xcassets"; sourceTree = "<group>"; };
 		5290B7981A1E3F8100EC5730 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		529D036E1A1BA2E200B0DAB2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewExtensions.swift; path = "../../../../../../../../Mountaincoders/Extension-Projects/SwiftExtensions/Source/NSView/NSViewExtensions.swift"; sourceTree = "<group>"; };
+		52BEE9721A1E48720052B641 /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorExtensions.swift; sourceTree = "<group>"; };
+		52BEE9731A1E48720052B641 /* NSViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewExtensions.swift; sourceTree = "<group>"; };
 		52FAE6FD1A1A9870003FA3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				5290B7971A1E3F4700EC5730 /* ApplicationDelegate */,
-				52FAE49F1A15556B00A67E09 /* Extensions */,
+				52BEE9711A1E48280052B641 /* Extensions */,
 				5228948E1A1539A7006049C9 /* NotificationCenter */,
 				520842C31A1155B1003F19CE /* Timer */,
 			);
@@ -257,11 +258,11 @@
 			path = "../../../../../../../../Mountaincoders/App-Projects/SimpleTimer/SimpleTimer/SimpleTimer/Source/Views/MainPopover/CircleView";
 			sourceTree = "<group>";
 		};
-		52FAE49F1A15556B00A67E09 /* Extensions */ = {
+		52BEE9711A1E48280052B641 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				52DBE5B91A161E1B0098DB04 /* NSViewExtensions.swift */,
-				5238AED71A15634A00B040C0 /* NSColorExtensions.swift */,
+				52BEE9721A1E48720052B641 /* NSColorExtensions.swift */,
+				52BEE9731A1E48720052B641 /* NSViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -372,12 +373,12 @@
 			files = (
 				529D036F1A1BA2E200B0DAB2 /* CircleView.swift in Sources */,
 				525543CC1A154F6A00425166 /* StatusBarView.swift in Sources */,
+				52BEE9741A1E48720052B641 /* NSColorExtensions.swift in Sources */,
 				5228CD241A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */,
 				5290B7991A1E3F8100EC5730 /* AppDelegate.swift in Sources */,
 				520842D31A1164C7003F19CE /* StatusBar.swift in Sources */,
-				5238AED81A15634A00B040C0 /* NSColorExtensions.swift in Sources */,
-				52DBE5BA1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */,
 				520842C51A1155B1003F19CE /* Timer.swift in Sources */,
+				52BEE9751A1E48720052B641 /* NSViewExtensions.swift in Sources */,
 				522894901A1539D3006049C9 /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,10 +391,11 @@
 				52ED14061A155C07003F9275 /* StatusBarView.swift in Sources */,
 				5228CD251A1A9D8D007C20EC /* MainPopoverViewController.swift in Sources */,
 				520842D41A1164C7003F19CE /* StatusBar.swift in Sources */,
-				5238AED91A15634A00B040C0 /* NSColorExtensions.swift in Sources */,
+				52A1351C1A1E48AC0017BAA1 /* NSColorExtensions.swift in Sources */,
 				520842A01A114C4D003F19CE /* SimpleTimerTests.swift in Sources */,
-				52DBE5BB1A161E1B0098DB04 /* NSViewExtensions.swift in Sources */,
 				520842C61A1155B1003F19CE /* Timer.swift in Sources */,
+				52BEE9611A1E479C0052B641 /* AppDelegate.swift in Sources */,
+				52A1351B1A1E48A80017BAA1 /* NSViewExtensions.swift in Sources */,
 				522894911A1539D3006049C9 /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
