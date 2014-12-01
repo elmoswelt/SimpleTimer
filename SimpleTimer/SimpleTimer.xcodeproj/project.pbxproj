@@ -22,7 +22,6 @@
 		52A135451A1E49B50017BAA1 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A1352A1A1E49B50017BAA1 /* NotificationCenter.swift */; };
 		52A135461A1E49B50017BAA1 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A1352C1A1E49B50017BAA1 /* Timer.swift */; };
 		52A135471A1E49B50017BAA1 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A1352C1A1E49B50017BAA1 /* Timer.swift */; };
-		52A135481A1E49B50017BAA1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A1352E1A1E49B50017BAA1 /* Info.plist */; };
 		52A135491A1E49B50017BAA1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A1352E1A1E49B50017BAA1 /* Info.plist */; };
 		52A1354A1A1E49B50017BAA1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A135321A1E49B50017BAA1 /* CircleView.swift */; };
 		52A1354B1A1E49B50017BAA1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A135321A1E49B50017BAA1 /* CircleView.swift */; };
@@ -340,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A135481A1E49B50017BAA1 /* Info.plist in Resources */,
 				52A1353A1A1E49B50017BAA1 /* Images.xcassets in Resources */,
 				52A1354C1A1E49B50017BAA1 /* MainPopoverView.xib in Resources */,
 				52A135501A1E49B50017BAA1 /* MainMenu.xib in Resources */,
