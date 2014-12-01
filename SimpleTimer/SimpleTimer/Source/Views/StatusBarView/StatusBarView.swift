@@ -108,44 +108,43 @@ class StatusBarView: NSView, NSPopoverDelegate{
     // ------------------------------------------------------------------------------------------
     override func mouseDown(theEvent: NSEvent) {
         
+        registerGlobalMouseMonitor()
         showPopover()
     }
     
-    override func mouseUp(theEvent: NSEvent) {
-        
+    
+    // ------------------------------------------------------------------------------------------
+    //MARK: - Mouse Click Monitoring
+    // ------------------------------------------------------------------------------------------
+    var globalMouseMonitor: AnyObject? = nil
+    
+    func registerGlobalMouseMonitor() {
+    
+        let mask = NSEventMask.LeftMouseDownMask | NSEventMask.RightMouseDownMask
+        globalMouseMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(mask, handler: handleMouseClick)
     }
     
     
     // ------------------------------------------------------------------------------------------
     //MARK: - Popover Handling
     // ------------------------------------------------------------------------------------------
+    let popover: NSPopover = NSPopover()
     
     func showPopover() {
-    
-        let popover:NSPopover = NSPopover()
         
         popover.behavior = NSPopoverBehavior.Transient
+        
         popover.appearance = NSAppearance(named: NSAppearanceNameAqua)
         
         popover.contentViewController = MainPopoverViewController(nibName: "MainPopoverView", bundle: nil)
-        
         popover.showRelativeToRect(self.frame, ofView: self, preferredEdge: NSMinYEdge)
         popover.delegate = self
     }
     
     
-    func dismissPopover() {
+    func handleMouseClick(aEvent: (NSEvent!)) -> Void {
     
-    
+        popover.close()
+        NSEvent.removeMonitor(globalMouseMonitor!)
     }
-    
-    
-    // ------------------------------------------------------------------------------------------
-    //MARK: - Popover Delegate
-    // ------------------------------------------------------------------------------------------
-    func popoverDidClose(notification: NSNotification) {
-    
-    
-    }
-
 }
