@@ -1,3 +1,5 @@
+This is a toy project not touched in a long time so far. You know how it goes some times...
+
 SimpleTimer
 ===========
 
